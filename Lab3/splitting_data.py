@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_csv('./ExternalFiles/for_corelation.csv')
 
 # selecting only the top 5 columns identified via Excel corelation
-column_names = ['sttl', 'dttl', 'dload', 'ackdat', 'dmean', 'label']
+column_names = ['dttl', 'sttl', 'ackdat', 'tcprtt', 'dload', 'label']
 df = df.loc[:, column_names]
 
 # selecting all benign rows
